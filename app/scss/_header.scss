@@ -63,7 +63,12 @@
   }
 
   &__cta {  // Call to Action Button
-
     font-size: $font-small;
+    color: $white;
+    transition: opacity 0.7s ease-in-out;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
 }
