@@ -35,6 +35,10 @@ body {
 
 a, a:visited, a:hover {
   text-decoration: none;
+  color: hsl(233, 8%, 62%);
+}
+
+h1 {
   color: hsl(233, 26%, 24%);
 }
 
@@ -53,7 +57,7 @@ a, a:visited, a:hover {
 
 button, .button {
   display: inline-block;
-  padding: 1rem 1.875rem;
+  padding: 0.875rem 1.875rem;
   border-radius: 50px;
   cursor: pointer;
   font-size: 0.875rem;
@@ -79,7 +83,7 @@ button, .button {
   padding: 24px;
 }
 .header__logo img {
-  width: 100%;
+  width: 8.875rem;
   height: auto;
 }
 .header__menu > span {
@@ -94,6 +98,9 @@ button, .button {
 .header__links a {
   font-size: 0.875rem;
   color: hsl(233, 26%, 24%);
+}
+.header__links a:not(:last-child) {
+  margin-right: 2rem;
 }
 .header__cta {
   font-size: 0.875rem;

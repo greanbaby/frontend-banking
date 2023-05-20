@@ -18,6 +18,10 @@ body {
 
 a, a:visited, a:hover {
   text-decoration: none;
+  color: $grayishBlue;
+}
+
+h1 {
   color: $darkBlue;
 }
 
@@ -42,7 +46,7 @@ a, a:visited, a:hover {
 // Button
 button, .button {
   display: inline-block;
-  padding: 1rem 1.875rem;
+  padding: 0.875rem 1.875rem;
   border-radius: 50px;
 
   cursor: pointer;
