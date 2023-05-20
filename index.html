@@ -22,39 +22,43 @@
 </head>
 <body>
 
-  <header>
-    <!-- logo -->
-    <div class="logo">
-      <a href="/">
+  <header class="header">
+    <nav class="flex flex-jc-sb">
+      <!-- logo -->
+      <a href="/" class="header__logo">
         <img src="images/logo.svg" alt="Logo">
       </a>
-      
-    </div>
 
-    <!-- hamburger menu -->
-    <button class="hamburger-menu">
-      <span class="hamburger-menu__line"></span>
-      <span class="hamburger-menu__line"></span>
-      <span class="hamburger-menu__line"></span>
-    </button>
+      <!-- hamburger menu -->
+      <a href="#" class="header__menu hide-for-desktop">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+
+      <!-- nav links -->
+      <div class="header__links hide-for-mobile">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+      </div>
+
+      <!-- CTA Button -->
+      <button type="button" class="header__cta hide-for-mobile">Request Invite</button>
+    </nav>
   </header>
 
 
 
+  <h3>Next generation digital banking</h3>
 
+  <p>Take your financial life online. Your Easybank account will be a one-stop-shop 
+  for spending, saving, budgeting, investing, and much more.</p>
+  <hr />
 <!--
-  Home
-  About
-  Contact
-  Blog
-  Careers
-
-  Request Invite
-
-  Next generation digital banking
-
-  Take your financial life online. Your Easybank account will be a one-stop-shop 
-  for spending, saving, budgeting, investing, and much more.
+  
 
   Why choose Easybank?
 
@@ -105,8 +109,16 @@
   © Easybank. All Rights Reserved
   
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Scotty G</a> and <a href="#">Coder-Coder</a>.
+    Challenge by 
+    <a href="https://www.frontendmentor.io?ref=challenge" 
+      target="_blank">Frontend Mentor</a>. 
+    Coded by 
+    <a href="http://sgin.info" 
+      target="_blank">Scotty G</a> 
+    and 
+    <a href="https://coder-coder.com" 
+      target="_blank">Coder-Coder
+    </a>.
   </div>
   <script src="./app/js/sg.js"></script>
 </body>

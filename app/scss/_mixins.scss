@@ -1,0 +1,32 @@
+// Breakpoints
+@media (min-width: 64em) { 
+  // styles here
+}
+
+$breakpoints-up: (
+  'sm': '0',
+  'md': '48em',
+  'lg': '64em',
+  'xl': '75em',
+  'xxl': '90em',
+);
+
+$breakpoints-down: (
+  'sm': '47.9375em',
+  'md': '63.9375em',
+  'lg': '74.9375em',
+  'xl': '89.9375em',
+  'xxl': '9999em',
+);
+
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}
