@@ -9,15 +9,18 @@
 ### @mixins media queries for breakpoints
 - to show/hide elements for mobile/desktop
 
-### animated hamburger menu morphing into an X
-- using transform-origin and transform-rotate(45deg)
+### transform-rotate(45deg) morphing hamburger into an X
+- using transform-origin to control exact position
 
-### <span> elements creating hamburger (no graphics)
-- built using CSS on spans and &:not(:last-child)
+### &:not(:last-child) creating hamburger (no graphics)
+- SASS on spans all done in _header.scss
 
-### pseudo-class underlining links with gradient
-- @header using pseudo-class to create lime green underline for nav links and controlling position:relative and position:absolute
-- opacity used so we can animate that whereas we cannot animate background or display 
+### a::before pseudo-class underlining links with gradient
+- Create lime green underline for nav links and controlling position:relative and position:absolute
+- opacity used to animate 
+
+### @keyframes animation with visibility (rather than display)
+- setting opacity to 0 AND visibility to none works with animations using keyframes whereas trying the same thing with display: none won't work
 
 ---
 
