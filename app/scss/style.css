@@ -65,6 +65,11 @@ a, a:visited, a:hover {
   text-decoration: none;
 }
 
+.container {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
 h1 {
   color: hsl(233, 26%, 24%);
 }
@@ -106,13 +111,13 @@ button, .button {
   }
 }
 
-.header.open .header__menu > span:first-child {
+.header.open .header__toggle > span:first-child {
   transform: rotate(45deg);
 }
-.header.open .header__menu > span:nth-child(2) {
+.header.open .header__toggle > span:nth-child(2) {
   opacity: 0;
 }
-.header.open .header__menu > span:last-child {
+.header.open .header__toggle > span:last-child {
   transform: rotate(-45deg);
 }
 .header .overlay {
@@ -126,13 +131,14 @@ button, .button {
   background: linear-gradient(hsl(233, 26%, 24%), transparent);
 }
 .header nav {
-  padding: 1.0625rem 1.5rem;
+  padding-top: 1.0625rem;
+  padding-bottom: 1.0625rem;
 }
 .header__logo img {
   width: 8.875rem;
   height: auto;
 }
-.header__menu > span {
+.header__toggle > span {
   display: block;
   width: 26px;
   height: 2px;
@@ -140,8 +146,21 @@ button, .button {
   transition: all 0.7s ease-in-out;
   transform-origin: 3px 1px;
 }
-.header__menu > span:not(:last-child) {
+.header__toggle > span:not(:last-child) {
   margin-bottom: 5px;
+}
+.header__mobile-menu {
+  background: hsl(0, 0%, 100%);
+  margin: 1.5rem 1.5rem;
+  padding: 1.625rem 0;
+  border-radius: 0.25rem;
+  position: relative;
+}
+.header__mobile-menu a {
+  color: hsl(233, 26%, 24%);
+  padding: 0.625rem;
+  display: block;
+  text-align: center;
 }
 .header__links a {
   font-size: 0.875rem;
