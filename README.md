@@ -22,6 +22,9 @@
 ### @keyframes animation with visibility (rather than display)
 - setting opacity to 0 AND visibility to none works with animations using keyframes whereas trying the same thing with display: none won't work
 
+### overflow:hidden added to body when Mobile Menu open
+- JavaScript adds this to prevent page scrolling when Mobile Menu open (and removes once closed)
+
 ---
 
 ## Browser Developer Tools New Tricks
