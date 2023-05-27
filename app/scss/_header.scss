@@ -32,6 +32,8 @@
   }
 
   nav {
+    position: relative;
+    background-color: $white;
     padding-top: 1.0625rem;
     padding-bottom: 1.0625rem;
   }
@@ -71,7 +73,7 @@
     border-radius: 0.25rem;
     position: absolute;
     width: calc(100% - 3rem);
-    
+
 
     a {
       color: $darkBlue;
