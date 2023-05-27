@@ -159,9 +159,10 @@ button, .button {
 .header__mobile-menu {
   background: hsl(0, 0%, 100%);
   margin: 1.5rem 1.5rem;
-  padding: 1.625rem 0;
+  padding: 1.625rem;
   border-radius: 0.25rem;
-  position: relative;
+  position: absolute;
+  width: calc(100% - 3rem);
 }
 .header__mobile-menu a {
   color: hsl(233, 26%, 24%);

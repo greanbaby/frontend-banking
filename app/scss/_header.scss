@@ -65,10 +65,13 @@
 
   &__mobile-menu { // White Mobile Menu
     background: $white;
+
     margin: 1.5rem 1.5rem;
-    padding: 1.625rem 0;
+    padding: 1.625rem;
     border-radius: 0.25rem;
-    position: relative;
+    position: absolute;
+    width: calc(100% - 3rem);
+    
 
     a {
       color: $darkBlue;
@@ -76,6 +79,7 @@
       display: block;
       text-align: center;
     }
+
   }
 
   &__links {  // Desktop Nav Links
